@@ -2,12 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Constants;
+using UnityEngine.EventSystems;
 
 public class MenuNavigation : MonoBehaviour
 {
     [SerializeField] private Button[] menuButtons;
     [SerializeField] private GameObject panelPause;
     [SerializeField] private GameObject panelHub;
+    [SerializeField] private MonoBehaviour playerMovementScript;
     private int currentIndex = 0;
     private Vector3 originalScale;
     public float focusScaleMultiplier = 1.2f;
@@ -56,6 +58,15 @@ public class MenuNavigation : MonoBehaviour
             menuButtons[currentIndex].onClick.Invoke();
             panelPause.SetActive(true);
             panelHub.SetActive(false);
+        }
+
+        if (panelPause.activeSelf)
+        {
+            playerMovementScript.enabled = false;
+        }
+        else
+        {
+            playerMovementScript.enabled = true;
         }
     }
 
