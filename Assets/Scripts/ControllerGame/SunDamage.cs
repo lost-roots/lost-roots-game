@@ -27,12 +27,12 @@ public class SunDamage : MonoBehaviour
 
         if (Physics.Raycast(rayOrigin, directionToSun, out RaycastHit hit, Mathf.Infinity, layerMask))
         {
-            Debug.Log("Raycast atingiu: " + hit.collider.gameObject.name);
+            // Debug.Log("Raycast atingiu: " + hit.collider.gameObject.name);
             // isInSunlight = false;
         }
         else
         {
-            Debug.Log("Sem bloqueio - Personagem exposto ao sol!");
+            // Debug.Log("Sem bloqueio - Personagem exposto ao sol!");
             isInSunlight = true;
             
         }

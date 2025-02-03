@@ -14,7 +14,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
-        Debug.Log("Vida Atual: " + currentHealth);
+        // Debug.Log("Vida Atual: " + currentHealth);
         if (currentHealth <= 0)
         {
             Die();
@@ -23,7 +23,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("O personagem morreu!");
+        // Debug.Log("O personagem morreu!");
         // Adicionar lógica para reiniciar o jogo ou exibir uma tela de Game Over
     }
 }

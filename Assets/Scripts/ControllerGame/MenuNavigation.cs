@@ -10,6 +10,7 @@ public class MenuNavigation : MonoBehaviour
     [SerializeField] private GameObject panelPause;
     [SerializeField] private GameObject panelHub;
     [SerializeField] private MonoBehaviour playerMovementScript;
+    [SerializeField] private MonoBehaviour cameraScript;
     private int currentIndex = 0;
     private Vector3 originalScale;
     public float focusScaleMultiplier = 1.2f;
@@ -60,14 +61,31 @@ public class MenuNavigation : MonoBehaviour
             panelHub.SetActive(false);
         }
 
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            InvokeSelectedButton();
+        }
+
         if (panelPause.activeSelf)
         {
             playerMovementScript.enabled = false;
+            cameraScript.enabled = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
         else
         {
-            playerMovementScript.enabled = true;
+            if (playerMovementScript != null) {
+                playerMovementScript.enabled = true;
+                cameraScript.enabled = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
+           
         }
+    }
+
+    private void InvokeSelectedButton()
+    {
+        menuButtons[currentIndex].onClick.Invoke();
     }
 
     private void Navigate(int direction)
@@ -90,7 +108,7 @@ public class MenuNavigation : MonoBehaviour
         canNavigate = true;
     }
 
-    private void ContinueGame()
+    public void ContinueGame()
     {
         if (panelPause.activeSelf)
         {

@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f7f7e17d6ec14ad4b9ab77fdab3c1196, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e36bcfe8eebfa4a488aea943c268e820, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -588,7 +588,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 32a0c89405fe72249ab27fecde0dc4a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9e4f077d7bb5f6e4c8a4ecb5b2e1d8f5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -681,7 +681,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 981806284}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 564c2aa844cde284abd60784d54dc5fd, type: 3}
+  m_Script: {fileID: 11500000, guid: deadc12de8262894391f0528459cf3f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &981806286
@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 1389653403}
   - component: {fileID: 1389653402}
   m_Layer: 5
-  m_Name: txtPrecionarBotao
+  m_Name: txtPressionarBotao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -756,10 +756,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "(precione qualquer bot\xE3o)"
+  m_text: "(pressione qualquer bot\xE3o)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9c068d754d090054ab95e7df053c6875, type: 2}
-  m_sharedMaterial: {fileID: -7836465957575553385, guid: 9c068d754d090054ab95e7df053c6875, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -894,8 +894,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Comece a jornada
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9c068d754d090054ab95e7df053c6875, type: 2}
-  m_sharedMaterial: {fileID: -7836465957575553385, guid: 9c068d754d090054ab95e7df053c6875, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

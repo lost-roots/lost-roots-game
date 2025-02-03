@@ -8,7 +8,7 @@ public class StartGame : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            SceneManager.LoadScene(GameConstants.SceneHub);
+            SceneManager.LoadScene(GameConstants.LevelDesignHub);
         }
     }
 
